@@ -1,0 +1,521 @@
+/* Загальні стилі для мобільних пристроїв */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 400px; /* Встановлюємо ширину тіла сайту */
+    margin: 0 auto; /* Центруємо сторінку на екрані */
+    background-color: #f4f4f4; /* Фон сторінки */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px; /* Відступи всередині тіла сайту */
+    overflow-x: hidden; /* Сховати горизонтальний скролл */
+}
+
+header {
+    background-color: #11190e;
+    text-align: center;
+    padding: 14px;
+    font-size: 28px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-tittle p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.content {
+    position: relative;
+}
+.featured-media {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.featured-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.discount {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(255, 41, 51);
+    color: #fff;
+    padding: 4px 37px;
+    transform: rotate(45deg) translate(45px, -8px);
+    font-size: 16px;
+    font-weight: bold;
+}
+.benefits_list {
+    padding: 6px;
+    background: var(--tov-main-color, #000000); /* ваш основний колір */
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.benefit_item {
+    display: flex;
+    align-items: center; /* Вирівнюємо іконку та текст по вертикалі */
+    margin-bottom: 10px; /* Відступ між елементами */
+}
+
+.benefit_icon {
+    width: 20px; /* Встановіть розмір іконки */
+    height: 20px; /* Встановіть розмір іконки */
+    margin-right: 10px; /* Відступ між іконкою та текстом */
+}
+.benefit_item span {
+    font-size: 13px; /* Розмір шрифта для тексту */
+    color: #fff; /* Колір тексту */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pricing-block {
+    display: flex;
+    justify-content: space-between; /* Розміщуємо ціни по боках */
+    align-items: center;
+    border-bottom: 2px solid #ccc; /* Перегородка між цінами */
+    border-right: 2px solid #ccc; /* Перегородка між цінами */
+    border-left: 2px solid #ccc; /* Перегородка між цінами */
+    padding-bottom: 10px; /* Відступи для комфортного відображення */
+    padding: 10px;
+}
+
+.regular-price{
+    text-align: center;
+    width: 48%; /* Розподіляємо простір між цінами */
+    border-right: 2px solid #ccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.discount-price {
+    text-align: center;
+    width: 48%; /* Розподіляємо простір між цінами */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.price-label {
+    padding: 2px 5px 3px;
+    border-radius: 4px;
+    background: #ee3737;
+    color: #fff;
+}
+.price-old {
+    padding: 2px 5px 3px;
+    border-radius: 4px;
+    color: black;
+}
+.price-amount {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through; /* Перекреслення для старої ціни */
+    color: black;
+}
+.countdown {
+    background-color: #f7f7f7; /* Світлий фон для блоку */
+    padding: 20px; /* Відступи */
+    width: auto; /* Автоматична ширина */
+    text-align: center; /* Центрування тексту */
+    margin-bottom: 20px ; 
+    border: 2px solid #171b19; /* Синя рамка */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+}
+
+.countdown h4 {
+    font-size: 18px; /* Розмір шрифту для заголовка */
+    color: black; /* Колір шрифту */
+    margin-bottom: 10px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.value {
+    display: flex; /* Використовуємо flexbox для вирівнювання елементів в рядок */
+    justify-content: center; /* Центруємо елементи по горизонталі */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    gap: 20px; /* Відстань між елементами */
+    margin-bottom: 20px; /* Відступ від лічильника до тексту */
+}
+.countdown__timer {
+    display: flex;
+    justify-content: center;
+}
+.countdown__item {
+    padding: 10px 15px;
+    margin: 0 15px;
+    background-color: #eeecec;
+    color: #11190e;
+    border-radius: 3px;
+}
+
+.countdown__value {
+    font-size: 35px; /* Розмір шрифту для значень лічильника */
+    font-weight: bold; /* Товстіший шрифт для цифр */
+    color: #11190e; /* Колір цифр */
+}
+
+.countdown__label {
+    font-size: 14px; /* Розмір шрифту для тексту "день", "годин", тощо */
+    color: #11190e; /* Колір тексту */
+}
+
+.countdown-text p {
+    font-size: 12px; /* Розмір шрифту для тексту з поясненнями */
+    color: #666; /* Колір тексту */
+}
+
+.countdown-text p + p {
+    margin-top: 10px; /* Відступ між абзацами */
+}
+/* Стилі для контейнера кнопки */
+.order-button {
+    text-align: center; /* Центруємо кнопку в контейнері */
+    margin: 20px 0; /* Відступи зверху та знизу */
+}
+
+/* Стилі для самої кнопки */
+.big-button {
+    display: inline-block; /* Перетворюємо на елемент, що займає тільки необхідну ширину */
+    background-color: #d4d4d4; /* Колір фону кнопки */
+    color: #11190e; /* Колір тексту */
+    font-size: 18px; /* Розмір шрифту */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold; /* Товстий шрифт */
+    padding: 15px 30px; /* Відступи всередині кнопки */
+    text-decoration: none; /* Видаляємо підкреслення */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Анімація при наведенні */
+}
+
+.big-button:hover {
+    color: #fff;
+    background-color: #11190e; /* Темніший відтінок синього при наведенні */
+    transform: translateY(-3px); /* Легке піднімання кнопки при наведенні */
+}
+
+.big-button:active {
+    transform: translateY(1px); /* Легке натискання при активному стані */
+}
+.product-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa; /* Світлий фон */
+    border: 2px solid #171b19; /* Синя рамка */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.presentation img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.presentation p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.features-block {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: #171b19;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e0cc31;
+    margin-bottom: 20px;
+}
+
+.feature-item-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #e0cc31;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e0cc31;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.feature-description p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+/* Основні стилі для контейнера */
+.specifications {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    border: 2px solid #11190e; /* Синя рамка */
+}
+
+/* Заголовок */
+.specifications .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Список характеристик */
+.characteristics__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.characteristics__list li {
+    margin: 0 0 12px;
+    padding: 0 20px 16px 50px;
+    background: url("../img/yellow_tick_icon.png") 20px 2px no-repeat;
+    color: #333; /* Змінив колір тексту на чорний, щоб було видно на світлому фоні */
+    position: relative;
+    font-size: 16px;
+}
+
+/* Стиль для тексту і заголовків */
+.characteristics__list li b {
+    color: #11190e; /* Колір для виділених назв характеристик */
+    font-weight: 600;
+}
+
+.characteristics__list li::before {
+    content: "✔"; /* Додаємо іконку перед кожним елементом */
+    margin-right: 10px; /* Відступ між іконкою та текстом */
+    color: #11190e; /* Колір іконки */
+    font-size: 18px; /* Розмір іконки */
+    position: absolute; /* Для точного розташування */
+    left: 10px; /* Відступ зліва для правильного розташування галочки */
+    top: 50%; /* Вертикальне вирівнювання */
+    transform: translateY(-50%); /* Центрування по вертикалі */
+}
+.section {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 1px;
+    border: 2px solid #11190e; /* Синя рамка */
+}
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #080707;
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+}
+.block img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+.block-text {
+    width: 50%;
+    text-align: left;
+    padding: 0 10px;
+}
+.block-text h3 {
+    color: #333;
+    margin: 0 0 5px;
+}
+.block-text p {
+    font-size: 14px;
+    margin: 0;
+}
+/* Чередування блоків */
+.block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    max-width: 395px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+.form-container h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 12px;
+    width: 350px;
+}
+
+.input-field {
+    width: 350px;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+.icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #666;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+    border: 1px solid #d9534f;
+    padding: 6px;
+    border-radius: 6px;
+    background: #ffecec;
+    text-align: left;
+}
+
+.btn {
+    background: #d4d4d4;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: black;
+    color: #d4d4d4;
+}
+.input-field {
+    width: 350px;
+    padding: 14px 14px 14px 45px; /* Зміщує текст праворуч від іконки */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+@media screen and (max-width: 400px) {
+    .form-container {
+        max-width: 395px;
+        padding: 10px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}   
+
+
+.footer {
+    background: #48ac46;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 16px;
+}
+
+.footer-title span {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer-title p {
+    font-size: 16px;
+    color: #080707;
+}
+
+.footer-title p:hover {
+    color: yellow;
+    cursor: pointer;
+}
